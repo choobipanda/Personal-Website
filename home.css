@@ -1,4 +1,3 @@
-/* HOME SECTION */
 .home-section {
   display: flex;
   flex-direction: column;
@@ -8,7 +7,10 @@
   background: var(--background);
 }
 
-.home-section > p {
+.home-section > header > p {
   font-size: 3rem;
+  font-weight: 200;
   font-style: italic;
+  color: var(--white);
+  text-align: center;
 }
