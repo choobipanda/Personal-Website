@@ -1,0 +1,14 @@
+/* HOME SECTION */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background);
+}
+
+.home-section > p {
+  font-size: 3rem;
+  font-style: italic;
+}

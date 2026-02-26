@@ -1,0 +1,39 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background);
+  text-align: center;
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.contact-links a {
+  margin: 15px;
+  font-size: 2.2rem;
+  transition: transform 0.2s;
+}
+
+.contact-links a:hover {
+  transform: scale(1.1);
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}

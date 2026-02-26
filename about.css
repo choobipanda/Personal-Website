@@ -1,0 +1,18 @@
+.about-section {
+  padding: 10rem 2rem;
+  background: var(--background);
+}
+
+.about-section details {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.about-section summary {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.about-section p {
+  margin-top: 1rem;
+}

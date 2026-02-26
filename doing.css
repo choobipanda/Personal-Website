@@ -1,0 +1,25 @@
+.doing-section {
+  padding: 10rem 2rem;
+  background: var(--white);
+  color: var(--purple);
+}
+
+.doing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+}
+
+.doing {
+  background: var(--background-tile);
+}
+
+.doing-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.doing-title {
+  text-align: center;
+  padding: 1rem;
+}
