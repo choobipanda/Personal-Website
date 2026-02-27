@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.contact-section-header > h2 {
+.contact-section-header > h2 { /* Requirement-2.F */
   font-size: 6rem;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .contact-links a {
-  margin: 15px;
+  margin: 15px; /* Requirement-2.9 */
   font-size: 2.2rem;
   transition: transform 0.2s;
 }

@@ -3,6 +3,7 @@
   --pink: #EEC1DD;
   --light-purple: #D1D0EF;
   --white: #FCF8FB;
+  --nav-height: 72px;
 
   --background: radial-gradient(
       circle at center,
@@ -49,7 +50,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; /* Requirement-2.10 */
   scroll-behavior: smooth;
 }
 
@@ -67,22 +68,26 @@ html {
 }
 
 /* BASE STYLES */
-body {
-  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+body { /* Requirement-2.A */
+  font-family: 'Playfair Display', 'Noto Serif SC', serif; /* Requirement-2.1 */
   font-size: 1.8rem;
   line-height: 1.4;
-  color: var(--white);
+  color: var(--white); /* Requirement-2.3 */
+  padding-top: 8rem;
+  min-height: 100vh;
+  overflow-x: hidden; /* Requirement-2.14 */
 }
 
-h1, h2 {
+h1, h2 { /* Requirement-2.B */
   font-weight: 700;
-  text-align: center;
+  text-align: center; /* Requirement-2.2 */
 }
 
-h1 { font-size: 6rem; }
-h2 { font-size: 4.2rem; }
+h1 { font-size: 7rem; }
+h2 { font-size: 6rem; }
 
-ul { list-style: none; }
+ul { list-style: none; /* Requirement-2.8 */
+}
 
 a {
   text-decoration: none;
@@ -95,15 +100,24 @@ img {
 }
 
 /* NAVBAR */
-.nav {
+#navbar { /* Requirement-2.D */
   display: flex;
   justify-content: flex-end;
-  position: center;
+  align-items: center;
+
+  position: fixed; /* Requirement-2.15 */
   top: 0;
+  left: 0;
+
   height: 8rem;
   width: 100%;
-  background: var(--background);
-  z-index: 10;
+  padding: 0 2rem;
+
+  background: var(--background); /* Requirement-2.4 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  z-index: 10; /* Requirement-2.17 */
 }
 
 .nav-list {
@@ -118,20 +132,30 @@ img {
   padding: 0 2rem;
 }
 
-.nav-list a:hover {
+.nav-list a:hover { /* Requirement-2.E */
   background: var(--purple);
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 1.5rem 80rem;
   background: var(--background);
-  font-size: 1.6rem;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 1.4rem;
+  border-top: 1px solid rgba(255,255,255,0.2); /* Requirement-2.5 */
+  visibility: visible; /* Requirement-2.16 */
 }
 
-.footer p {
-  margin: 0.5rem 0;
-  opacity: 0.85;
+.footer p:first-child {
+  float: left; /* Requirement-2.11 */
+}
+
+.footer p:last-child {
+  float: right;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  clear: both; /* Requirement-2.13 */
 }
