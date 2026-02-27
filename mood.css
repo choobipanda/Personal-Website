@@ -5,7 +5,6 @@
   overflow: hidden;
 }
 
-/* Title */
 .mood-board-section h2 {
   font-size: 6rem;
   margin-bottom: 2rem;
@@ -16,21 +15,18 @@
   margin: 0 auto 4rem auto;
 }
 
-/* 3x3 grid with NO spacing */
 .mood-board-table {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  border-collapse: collapse; /* removes gaps */
+  border-collapse: collapse;
 }
 
-/* Remove cell spacing completely */
 .mood-board-table td {
   padding: 0;
   width: 33.333%;
 }
 
-/* Images */
 .mood-board-table img {
   width: 100%;
   height: 300px;
